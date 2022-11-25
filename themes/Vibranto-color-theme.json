@@ -46,7 +46,7 @@
 		"name": "punctuation.separator.parameters.python",
 		"scope": "punctuation.separator.period.python,punctuation.separator.element.python,punctuation.parenthesis.begin.python,punctuation.parenthesis.end.python",
 		"settings": {
-		  "foreground": "#f8f8f2"
+		  "foreground": "#FF63BA"
 		}
 	  },
 	  {
@@ -200,7 +200,7 @@
 		"name": "js/ts variable.other.constant",
 		"scope": "variable.other.constant",
 		"settings": {
-		  "foreground": "#ba64ff"
+		  "foreground": "#ffe37b"
 		}
 	  },
 	  {
@@ -224,7 +224,7 @@
 		"name": "java modifier.import",
 		"scope": "punctuation.section.block.begin.java,punctuation.section.block.end.java,punctuation.definition.method-parameters.begin.java,punctuation.definition.method-parameters.end.java,meta.method.identifier.java,punctuation.section.method.begin.java,punctuation.section.method.end.java,punctuation.terminator.java,punctuation.section.class.begin.java,punctuation.section.class.end.java,punctuation.section.inner-class.begin.java,punctuation.section.inner-class.end.java,meta.method-call.java,punctuation.section.class.begin.bracket.curly.java,punctuation.section.class.end.bracket.curly.java,punctuation.section.method.begin.bracket.curly.java,punctuation.section.method.end.bracket.curly.java,punctuation.separator.period.java,punctuation.bracket.angle.java,punctuation.definition.annotation.java,meta.method.body.java",
 		"settings": {
-		  "foreground": "#f8f8f2"
+		  "foreground": "#FF63BA"
 		}
 	  },
 	  {
@@ -334,7 +334,7 @@
 	  },
 	  {
 		"name": "js variable readwrite",
-		"scope": "variable.other.readwrite,meta.object-literal.key,support.variable.property,support.variable.object.process,support.variable.object.node",
+		"scope": "variable,variable.other.readwrite,support.variable.property,support.variable.object.process,support.variable.object.node",
 		"settings": {
 		  "foreground": "#f8f8f2"
 		}
@@ -349,6 +349,8 @@
 	  {
 		"name": "js/ts Keyword",
 		"scope": [
+		  "operator",
+		  "keyword.operator",
 		  "keyword.operator.expression.instanceof",
 		  "keyword.operator.new",
 		  "keyword.operator.ternary",
@@ -419,7 +421,7 @@
 		"name": "keyword.operator",
 		"scope": "keyword.operator.arithmetic,keyword.operator.comparison,keyword.operator.decrement,keyword.operator.increment,keyword.operator.relational",
 		"settings": {
-		  "foreground": "#35baff"
+		  "foreground": "#ff63ba"
 		}
 	  },
 	  {
@@ -507,13 +509,6 @@
 		}
 	  },
 	  {
-		"name": "Operators",
-		"scope": "keyword.operator",
-		"settings": {
-		  "foreground": "#f8f8f2"
-		}
-	  },
-	  {
 		"name": "Compound Assignment Operators",
 		"scope": "keyword.operator.assignment.compound",
 		"settings": {
@@ -538,7 +533,7 @@
 		"name": "Namespaces",
 		"scope": "entity.name.namespace",
 		"settings": {
-		  "foreground": "#ba64ff"
+		  "foreground": "#FFA04F"
 		}
 	  },
 	  {
@@ -762,7 +757,11 @@
 	  },
 	  {
 		"name": "Constants",
-		"scope": "constant",
+		"scope": [
+			"constant",
+			"constant.*",
+			"variable.other.constant"
+		],
 		"settings": {
 		  "foreground": "#ffe37b"
 		}
@@ -1423,17 +1422,11 @@
 	  {
 		"name": "go operator",
 		"scope": [
-		  "keyword.operator.assignment.go"
-		],
-		"settings": {
-		  "foreground": "#ba64ff"
-		}
-	  },
-	  {
-		"name": "go operator",
-		"scope": [
+		  "punctuation.other.comma.go",
+		  "keyword.operator.assignment.go",
 		  "keyword.operator.arithmetic.go",
-		  "keyword.operator.address.go"
+		  "keyword.operator.address.go",
+		  "punctuation.other.period.go"
 		],
 		"settings": {
 		  "foreground": "#ff63ba"
