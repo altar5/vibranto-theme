@@ -1937,6 +1937,7 @@
 	  "badge.background": "#333649",
 	  "badge.foreground": "#ffffff",
 	  "terminal.foreground": "#cccccc",
+	  "terminal.background": "#141620",
 	  "terminal.selectionBackground": "#ffffff40",
 	  "terminalCursor.background": "#0087FF",
 	  "terminalCursor.foreground": "#ffffff",
